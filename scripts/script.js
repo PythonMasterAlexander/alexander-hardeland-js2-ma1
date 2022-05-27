@@ -1,11 +1,19 @@
 const mainContainer = document.querySelector("main");
-const apiAdress = "https://fakestoreapi.com";
+
+//Remember to read docs and get the right address
+const webUrl = "https://fakestoreapi.com/products/categories";
 
 async function apiCall(url) {
 
-  const response = await fetch(url);
+  try {
+    const response = await fetch(url);
+    const apiReturn = await response.json();
+    console.log(apiReturn);
+  }
 
-  console.log(response);
+  catch(error) {
+    console.log(error)
+  }
 }
 
-apiCall(apiAdress);
+apiCall(webUrl);
