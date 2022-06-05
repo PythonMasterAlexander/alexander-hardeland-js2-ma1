@@ -13,6 +13,7 @@ export default async function apiCall(url) {
       const title = apiReturn[i].title;
       const price = apiReturn[i].price;
 
+
       let html = `
         <div class="main__api-content-container">
           <h2>${title}</h2>

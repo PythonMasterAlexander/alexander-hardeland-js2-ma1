@@ -19,6 +19,7 @@ html, body {
 :root {
   font-size: 16px;
   --color-black: hsla(0, 0%, 0%, 1);
+  --color-blue: hsl(219, 36%, 82%);
   --margin-size: 25px;
 }
 
@@ -48,6 +49,25 @@ h2 {
 
 p {
   font-size: 0.7rem;
+}
+
+input {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  height: 40px;
+}
+
+label {
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+}
+
+button {
+  background-color: var(--color-blue);
+  border-radius: 2px;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  padding: 10px;
 }
 
 header {
@@ -82,19 +102,26 @@ footer p {
   padding-left: var(--margin-size);
 }
 
+.search-field-section__input-field {
+  width: fit-content;
+  margin: var(--margin-size) auto;
+  margin-top: 0;
+}
+
 .main {
   display: flex;
-  gap: var(--margin-size);
   flex-wrap: wrap;
-  margin: 0 auto;
-  width: 90%;
+  gap: var(--margin-size);
+  justify-content: center;
+  margin: var(--margin-size) auto;
+  width: 85%;
 }
 
 .main__api-content-container {
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  width: 25%;
+  width: 40%;
 }
 
 .main__api-content-container__paragraph {
