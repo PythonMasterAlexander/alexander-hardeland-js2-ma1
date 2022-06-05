@@ -28,10 +28,6 @@ body {
   font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-.page-wrapper {
-  flex: 1 0 auto;
-}
-
 a {
   color: var(--color-black);
   text-transform: uppercase;
@@ -42,27 +38,67 @@ header, p {
   text-align: center;
 }
 
-nav {
-  margin: 0 auto;
-  width: fit-content;
-}
-
 h1 {
   font-family: 'Courier New', Courier, monospace;
-  margin-top: var(--margin-size);
-  margin-bottom: var(--margin-size);
+}
+
+h2 {
+  font-size: 0.8rem;
+}
+
+p {
+  font-size: 0.7rem;
+}
+
+header {
+  margin: var(--margin-size) 0;
+}
+
+nav {
+  margin: var(--margin-size) auto;
+  width: fit-content;
 }
 
 footer {
   flex-shrink: 0;
+  margin-top: var(--margin-size);
 }
 
 footer p {
   margin-bottom: var(--margin-size);
+  font-size: 1rem;
+}
+
+.page-wrapper {
+  flex: 1 0 auto;
+}
+
+.header__nav__link-container {
+  border-bottom: 2px solid var(--color-black);
+  width: fit-content;
 }
 
 .header__nav__link--padding-left {
   padding-left: var(--margin-size);
+}
+
+.main {
+  display: flex;
+  gap: var(--margin-size);
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.main__api-content-container {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 25%;
+}
+
+.main__api-content-container__paragraph {
+  display: inline-block;
 }
 
 .loader {
@@ -74,11 +110,6 @@ footer p {
   height: 20px;
   margin: 50px auto;
   width: 20px;
-}
-
-.header__nav__link-container {
-  border-bottom: 2px solid var(--color-black);
-  width: fit-content;
 }
 
 @keyframes spin {

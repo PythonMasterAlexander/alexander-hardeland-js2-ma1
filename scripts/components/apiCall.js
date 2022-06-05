@@ -14,9 +14,10 @@ export default async function apiCall(url) {
       const price = apiReturn[i].price;
 
       let html = `
-        <div>
+        <div class="main__api-content-container">
           <h2>${title}</h2>
-          <p>${price}</p>
+          <p class="main__api-content-container__paragraph">${price} $</p>
+          <i class="fa-solid fa-heart"></i>
         </div>`;
 
       mainContainer.innerHTML += html;
